@@ -2,11 +2,8 @@
 
 ## Features
 
-Description of the module...
-
-<!--
-![Screenshot caltimeinput](img/screenshot_caltimeinput.png?raw=true "Caltimeinput"){imgmd}
--->
+This module offers a convenient calendar view allowing you to log time spent on tasks more quickly (with daily, weekly
+and monthly sums).
 
 Other external modules are available on [Dolistore.com](https://www.dolistore.com).
 
@@ -14,35 +11,28 @@ Other external modules are available on [Dolistore.com](https://www.dolistore.co
 
 Translations can be completed manually by editing files into directories *langs*.
 
-<!--
-This module contains also a sample configuration for Transifex, under the hidden directory [.tx](.tx), so it is possible to manage translation using this service.
-
-For more informations, see the [translator's documentation](https://wiki.dolibarr.org/index.php/Translator_documentation).
-
-There is a [Transifex project](https://transifex.com/projects/p/dolibarr-module-template) for this module.
--->
-
-<!--
-
 ## Installation
 
 ### From the ZIP file and GUI interface
 
-- If you get the module in a zip file (like when downloading it from the market place [Dolistore](https://www.dolistore.com)), go into
-menu ```Home - Setup - Modules - Deploy external module``` and upload the zip file.
+- If you get the module in a zip file (like when downloading it from the market
+  place [Dolistore](https://www.dolistore.com)), go into menu ```Home - Setup - Modules - Deploy external module``` and
+  upload the zip file.
 
 Note: If this screen tell you there is no custom directory, check your setup is correct:
 
-- In your Dolibarr installation directory, edit the ```htdocs/conf/conf.php``` file and check that following lines are not commented:
+- In your Dolibarr installation directory, edit the ```htdocs/conf/conf.php``` file and check that following lines are
+  not commented:
 
     ```php
     //$dolibarr_main_url_root_alt ...
     //$dolibarr_main_document_root_alt ...
     ```
 
-- Uncomment them if necessary (delete the leading ```//```) and assign a sensible value according to your Dolibarr installation
+- Uncomment them if necessary (delete the leading ```//```) and assign a sensible value according to your Dolibarr
+  installation
 
-    For example :
+  For example :
 
     - UNIX:
         ```php
@@ -58,20 +48,23 @@ Note: If this screen tell you there is no custom directory, check your setup is 
 
 ### From a GIT repository
 
+The original git repository is: https://github.com/atm-florianm/dolibarr_module_caltimeinput
+
 - Clone the repository in ```$dolibarr_main_document_root_alt/caltimeinput```
 
 ```sh
-cd ....../custom
-git clone git@github.com:gitlogin/caltimeinput.git caltimeinput
+# assuming the variable DOLIBARR_HTDOCS points to the htdocs directory of your Dolibarr instance
+cd $DOLIBARR_HTDOCS/custom
+git clone git@github.com:atm-florianm/dolibarr_module_caltimeinput.git caltimeinput
 ```
 
 ### <a name="final_steps"></a>Final steps
 
 From your browser:
 
-  - Log into Dolibarr as a super-administrator
-  - Go to "Setup" -> "Modules"
-  - You should now be able to find and enable the module
+- Log into Dolibarr as a super-administrator
+- Go to "Setup" -> "Modules"
+- You should now be able to find and enable the module
 
 -->
 
